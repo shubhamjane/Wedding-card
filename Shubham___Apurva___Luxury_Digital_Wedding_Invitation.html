@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham &amp; Apurva — Wedding Invitation | 14 December 2026</title>
+  <meta name="description" content="Together with the Jane & Pachgade families, Shubham & Apurva joyfully invite you to celebrate their wedding on 14 December 2026 at Muktai Place, Amravati." />
+
+  <!-- Google Fonts: Luxury Serif, Calligraphic Script & Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FDFBF7',
+            silk: '#F9F4EC',
+            champagne: '#C59B5F',
+            champagneDark: '#A67C42',
+            blush: '#E8C4C4',
+            peach: '#F2D5C4',
+            sage: '#8FA395',
+            ink: '#4A3F35',
+            inkSoft: '#6E6054',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            luxury: '0 20px 50px -15px rgba(74, 63, 53, 0.08)',
+            card: '0 10px 30px -10px rgba(197, 155, 95, 0.14)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       DESIGN TOKENS & LUXURY STATIONERY VARIABLES
+       ========================================================================== */
+    :root {
+      --bg-ivory: #FDFBF7;
+      --bg-white: #FFFFFF;
+      --bg-silk: #F9F4EC;
+      --accent-gold: #C59B5F;
+      --accent-gold-light: #DFC397;
+      --accent-blush: #E8C4C4;
+      --accent-peach: #F2D5C4;
+      --accent-sage: #8FA395;
+      --text-ink: #4A3F35;
+      --text-muted: #786A5E;
+      --border-gold: rgba(197, 155, 95, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      background-color: var(--bg-ivory);
+      color: var(--text-ink);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Fine Cotton Paper Grain Texture Overlay */
+    .paper-texture {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 50;
+      opacity: 0.032;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Subtle Mandala Watermark Background */
+    .mandala-bg {
+      background-image: radial-gradient(circle at 50% 50%, rgba(197, 155, 95, 0.06) 0%, transparent 70%);
+    }
+
+    /* Double Hairline Invitation Frame */
+    .invitation-frame {
+      position: relative;
+      border: 1px solid rgba(197, 155, 95, 0.42);
+      box-shadow: 0 24px 60px -15px rgba(74, 63, 53, 0.08);
+    }
+    .invitation-frame::after {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(197, 155, 95, 0.24);
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    /* Gold Foil Text Shimmer */
+    .gold-foil-text {
+      background: linear-gradient(135deg, #9F763B 0%, #C59B5F 45%, #DFBE8A 65%, #A97F43 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Gentle Botanical Sway Animations */
+    @keyframes gentleSway {
+      0%, 100% { transform: rotate(0deg) translateY(0px); }
+      50% { transform: rotate(1.8deg) translateY(-4px); }
+    }
+    @keyframes gentleSwayReverse {
+      0%, 100% { transform: rotate(0deg) translateY(0px); }
+      50% { transform: rotate(-1.8deg) translateY(-3px); }
+    }
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes heroFadeUp {
+      0% { opacity: 0; transform: translateY(22px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scrollFloat {
+      0%, 100% { transform: translateY(0); opacity: 0.7; }
+      50% { transform: translateY(6px); opacity: 1; }
+    }
+
+    .animate-sway {
+      animation: gentleSway 7s ease-in-out infinite;
+      transform-origin: top left;
+    }
+    .animate-sway-reverse {
+      animation: gentleSwayReverse 8s ease-in-out infinite;
+      transform-origin: bottom right;
+    }
+    .animate-mandala {
+      animation: slowSpin 90s linear infinite;
+    }
+    .animate-scroll-indicator {
+      animation: scrollFloat 2.4s ease-in-out infinite;
+    }
+
+    /* Hero Entrance Cascade */
+    .hero-reveal {
+      opacity: 0;
+      animation: heroFadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .delay-100 { animation-delay: 0.12s; }
+    .delay-200 { animation-delay: 0.28s; }
+    .delay-300 { animation-delay: 0.44s; }
+    .delay-400 { animation-delay: 0.60s; }
+    .delay-500 { animation-delay: 0.76s; }
+
+    /* Scroll Reveal Observer Classes */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Luxury Gold Button Shimmer */
+    .btn-gold {
+      background: linear-gradient(135deg, #C59B5F 0%, #B38749 100%);
+      color: #FFFFFF;
+      transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 10px 25px -8px rgba(197, 155, 95, 0.55);
+    }
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #B5894B 0%, #9E7236 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -8px rgba(197, 155, 95, 0.7);
+    }
+    .btn-gold:active {
+      transform: translateY(0);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FDFBF7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #DFC9A6;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-ivory text-ink selection:bg-blush/50 selection:text-ink">
+
+  <!-- Cotton Paper Subtle Texture Overlay -->
+  <div class="paper-texture" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       1. MINIMAL STICKY NAVIGATION
+       ======================================================================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-40 transition-all duration-300 bg-ivory/85 backdrop-blur-md border-b border-champagne/25">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Monogram Crest Logo -->
+        <a href="#home" class="flex items-center gap-2.5 group focus:outline-none" aria-label="Shubham and Apurva Home">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-champagne/50 bg-white/90 flex items-center justify-center shadow-sm group-hover:border-champagne transition-colors">
+            <span class="font-serif text-base sm:text-lg font-semibold tracking-wider text-champagneDark">S<span class="font-script text-champagne text-xl mx-0.5">&amp;</span>A</span>
+          </div>
+          <div class="hidden xs:flex flex-col">
+            <span class="font-serif text-sm sm:text-base tracking-[0.2em] uppercase text-ink font-medium">Shubham &amp; Apurva</span>
+            <span class="text-[10px] tracking-[0.24em] uppercase text-champagneDark">14 • 12 • 2026</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8" aria-label="Main Navigation">
+          <a href="#home" class="nav-link text-xs uppercase tracking-[0.2em] text-inkSoft hover:text-champagneDark transition-colors py-2">Home</a>
+          <a href="#story" class="nav-link text-xs uppercase tracking-[0.2em] text-inkSoft hover:text-champagneDark transition-colors py-2">Our Story</a>
+          <a href="#events" class="nav-link text-xs uppercase tracking-[0.2em] text-inkSoft hover:text-champagneDark transition-colors py-2">Events</a>
+          <a href="#venue" class="nav-link text-xs uppercase tracking-[0.2em] text-inkSoft hover:text-champagneDark transition-colors py-2">Venue</a>
+          <a href="#rsvp" class="ml-2 px-5 py-2.5 rounded-full border border-champagne/60 bg-white/80 text-xs uppercase tracking-[0.2em] text-champagneDark font-medium hover:bg-champagne hover:text-white transition-all shadow-sm">RSVP</a>
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2.5 rounded-xl border border-champagne/30 bg-white/80 text-ink hover:border-champagne focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+          <svg id="hamburger-icon" class="w-5 h-5 text-champagneDark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg id="close-icon" class="w-5 h-5 text-champagneDark hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-ivory/98 backdrop-blur-lg border-b border-champagne/30 px-6 pt-3 pb-7 shadow-luxury">
+      <nav class="flex flex-col space-y-2" aria-label="Mobile Navigation">
+        <a href="#home" class="mobile-nav-link py-3 px-3 rounded-xl text-sm uppercase tracking-[0.2em] text-ink hover:bg-silk hover:text-champagneDark transition-colors">Home</a>
+        <a href="#story" class="mobile-nav-link py-3 px-3 rounded-xl text-sm uppercase tracking-[0.2em] text-ink hover:bg-silk hover:text-champagneDark transition-colors">Our Story</a>
+        <a href="#events" class="mobile-nav-link py-3 px-3 rounded-xl text-sm uppercase tracking-[0.2em] text-ink hover:bg-silk hover:text-champagneDark transition-colors">Events</a>
+        <a href="#venue" class="mobile-nav-link py-3 px-3 rounded-xl text-sm uppercase tracking-[0.2em] text-ink hover:bg-silk hover:text-champagneDark transition-colors">Venue</a>
+        <a href="#rsvp" class="mobile-nav-link mt-2 py-3.5 px-4 rounded-full btn-gold text-center text-xs uppercase tracking-[0.22em] font-medium">RSVP Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. LUXURY HERO SECTION (ROYAL STATIONERY CARD)
+         ====================================================================== -->
+    <section id="home" class="relative min-h-screen pt-24 pb-16 sm:pt-28 sm:pb-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center mandala-bg overflow-hidden">
+      
+      <!-- Ambient Soft Pastel Glows -->
+      <div class="absolute top-16 -left-24 w-72 h-72 rounded-full bg-blush/25 blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute bottom-12 -right-24 w-80 h-80 rounded-full bg-peach/30 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <!-- Main Wedding Invitation Card Container -->
+      <div class="relative w-full max-w-4xl mx-auto bg-white/95 rounded-[28px] sm:rounded-[36px] invitation-frame px-6 py-14 sm:px-14 sm:py-20 md:py-24 text-center overflow-hidden">
+        
+        <!-- Subtle Rotating Sacred Mandala Filigree Behind Names -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.045]" aria-hidden="true">
+          <svg class="w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] animate-mandala text-champagne" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.7">
+            <circle cx="100" cy="100" r="92" stroke-dasharray="3 3" />
+            <circle cx="100" cy="100" r="76" />
+            <circle cx="100" cy="100" r="58" stroke-dasharray="2 2" />
+            <polygon points="100,8 124,76 192,100 124,124 100,192 76,124 8,100 76,76" />
+            <polygon points="100,22 118,82 178,100 118,118 100,178 82,118 22,100 82,82" transform="rotate(45 100 100)" />
+          </svg>
+        </div>
+
+        <!-- TOP-LEFT BOTANICAL FLORAL ILLUSTRATION -->
+        <div class="absolute -top-3 -left-3 w-36 h-36 sm:w-52 sm:h-52 md:w-60 md:h-60 pointer-events-none animate-sway" aria-hidden="true">
+          <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <!-- Sage Eucalyptus & Botanical Leaves -->
+            <path d="M18 155C45 130 70 95 92 48" stroke="#8FA395" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M140 22C112 45 78 65 38 82" stroke="#8FA395" stroke-width="1.6" stroke-linecap="round"/>
+            <ellipse cx="42" cy="128" rx="16" ry="7" transform="rotate(-38 42 128)" fill="#8FA395" fill-opacity="0.32"/>
+            <ellipse cx="66" cy="96" rx="18" ry="8" transform="rotate(-48 66 96)" fill="#8FA395" fill-opacity="0.26"/>
+            <ellipse cx="86" cy="64" rx="14" ry="6" transform="rotate(-55 86 64)" fill="#8FA395" fill-opacity="0.35"/>
+            <ellipse cx="116" cy="36" rx="16" ry="7" transform="rotate(-22 116 36)" fill="#8FA395" fill-opacity="0.28"/>
+            <ellipse cx="78" cy="58" rx="15" ry="6.5" transform="rotate(-15 78 58)" fill="#8FA395" fill-opacity="0.22"/>
+            <!-- Gold Botanical Sprigs -->
+            <path d="M22 185C35 162 52 146 72 136" stroke="#C59B5F" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="72" cy="136" r="2.8" fill="#C59B5F"/>
+            <circle cx="56" cy="146" r="2.2" fill="#C59B5F"/>
+            <path d="M168 18C148 30 134 45 124 64" stroke="#C59B5F" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="124" cy="64" r="2.6" fill="#C59B5F"/>
+            <!-- Main Blush Peony Blossom -->
+            <g transform="translate(52, 52)">
+              <circle cx="0" cy="0" r="32" fill="#E8C4C4" fill-opacity="0.45"/>
+              <path d="M0 -30C14 -28 24 -14 20 0C16 14 -16 14 -20 0C-24 -14 -14 -28 0 -30Z" fill="#E8C4C4" fill-opacity="0.75"/>
+              <path d="M-28 4C-24 -10 -10 -18 4 -12C18 -6 14 22 0 24C-14 26 -32 18 -28 4Z" fill="#F2D5C4" fill-opacity="0.72"/>
+              <path d="M28 4C24 -10 10 -18 -4 -12C-18 -6 -14 22 0 24C14 26 32 18 28 4Z" fill="#E8C4C4" fill-opacity="0.8"/>
+              <circle cx="0" cy="0" r="9" fill="#F9F4EC"/>
+              <circle cx="0" cy="0" r="4.5" fill="#C59B5F" fill-opacity="0.85"/>
+              <circle cx="-6" cy="-4" r="1.5" fill="#C59B5F"/>
+              <circle cx="6" cy="-3" r="1.5" fill="#C59B5F"/>
+              <circle cx="0" cy="6" r="1.5" fill="#C59B5F"/>
+            </g>
+            <!-- Secondary Warm Peach Rosebud -->
+            <g transform="translate(106, 28)">
+              <circle cx="0" cy="0" r="18" fill="#F2D5C4" fill-opacity="0.65"/>
+              <path d="M-12 2C-10 -8 0 -14 10 -8C16 -4 12 12 0 12C-10 12 -14 8 -12 2Z" fill="#E8C4C4" fill-opacity="0.75"/>
+              <circle cx="0" cy="0" r="4" fill="#C59B5F" fill-opacity="0.75"/>
+            </g>
+            <!-- Lower Ivory & Blush Bud -->
+            <g transform="translate(26, 108)">
+              <circle cx="0" cy="0" r="16" fill="#F2D5C4" fill-opacity="0.6"/>
+              <circle cx="2" cy="-2" r="9" fill="#E8C4C4" fill-opacity="0.7"/>
+              <circle cx="0" cy="0" r="3" fill="#C59B5F"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- BOTTOM-RIGHT BOTANICAL FLORAL ILLUSTRATION -->
+        <div class="absolute -bottom-3 -right-3 w-36 h-36 sm:w-52 sm:h-52 md:w-60 md:h-60 pointer-events-none animate-sway-reverse" aria-hidden="true">
+          <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full rotate-180">
+            <path d="M18 155C45 130 70 95 92 48" stroke="#8FA395" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M140 22C112 45 78 65 38 82" stroke="#8FA395" stroke-width="1.6" stroke-linecap="round"/>
+            <ellipse cx="42" cy="128" rx="16" ry="7" transform="rotate(-38 42 128)" fill="#8FA395" fill-opacity="0.32"/>
+            <ellipse cx="66" cy="96" rx="18" ry="8" transform="rotate(-48 66 96)" fill="#8FA395" fill-opacity="0.26"/>
+            <ellipse cx="86" cy="64" rx="14" ry="6" transform="rotate(-55 86 64)" fill="#8FA395" fill-opacity="0.35"/>
+            <ellipse cx="116" cy="36" rx="16" ry="7" transform="rotate(-22 116 36)" fill="#8FA395" fill-opacity="0.28"/>
+            <path d="M22 185C35 162 52 146 72 136" stroke="#C59B5F" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="72" cy="136" r="2.8" fill="#C59B5F"/>
+            <g transform="translate(52, 52)">
+              <circle cx="0" cy="0" r="32" fill="#E8C4C4" fill-opacity="0.45"/>
+              <path d="M0 -30C14 -28 24 -14 20 0C16 14 -16 14 -20 0C-24 -14 -14 -28 0 -30Z" fill="#E8C4C4" fill-opacity="0.75"/>
+              <path d="M-28 4C-24 -10 -10 -18 4 -12C18 -6 14 22 0 24C-14 26 -32 18 -28 4Z" fill="#F2D5C4" fill-opacity="0.72"/>
+              <circle cx="0" cy="0" r="8" fill="#F9F4EC"/>
+              <circle cx="0" cy="0" r="4" fill="#C59B5F" fill-opacity="0.85"/>
+            </g>
+            <g transform="translate(106, 28)">
+              <circle cx="0" cy="0" r="18" fill="#F2D5C4" fill-opacity="0.65"/>
+              <circle cx="0" cy="0" r="4" fill="#C59B5F" fill-opacity="0.75"/>
+            </g>
+            <g transform="translate(26, 108)">
+              <circle cx="0" cy="0" r="16" fill="#F2D5C4" fill-opacity="0.6"/>
+              <circle cx="0" cy="0" r="3" fill="#C59B5F"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Sacred Auspicious Motif Header -->
+        <div class="relative z-10 hero-reveal">
+          <div class="inline-flex flex-col items-center">
+            <!-- Delicate Lotus Crest SVG -->
+            <svg class="w-10 h-10 text-champagne mb-3" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M24 8C24 8 18 17 18 24C18 29 21 33 24 34C27 33 30 29 30 24C30 17 24 8 24 8Z"/>
+              <path d="M18 24C13 21 9 22 8 25C10 29 15 33 24 34"/>
+              <path d="M30 24C35 21 39 22 40 25C38 29 33 33 24 34"/>
+              <path d="M12 31C8 31 6 33 6 35C11 37 18 37 24 35C30 37 37 37 42 35C42 33 40 31 36 31"/>
+              <circle cx="24" cy="40" r="1.5" fill="currentColor"/>
+            </svg>
+            <p class="text-[11px] sm:text-xs uppercase tracking-[0.32em] text-champagneDark font-medium">
+              Together With Their Families
+            </p>
+            <p class="mt-1.5 font-serif italic text-base sm:text-lg text-inkSoft">
+              The <span class="font-semibold text-ink">Jane</span> &amp; <span class="font-semibold text-ink">Pachgade</span> Families
+            </p>
+          </div>
+        </div>
+
+        <!-- Thin Gold Ornamental Divider -->
+        <div class="relative z-10 my-6 sm:my-8 flex items-center justify-center gap-3 hero-reveal delay-100" aria-hidden="true">
+          <span class="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-champagne/60"></span>
+          <span class="w-1.5 h-1.5 rotate-45 border border-champagne bg-ivory"></span>
+          <span class="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-champagne/60"></span>
+        </div>
+
+        <!-- Couple's Grand Luxury Typography -->
+        <div class="relative z-10 hero-reveal delay-200">
+          <h1 class="font-serif font-normal tracking-[0.12em] text-4xl sm:text-6xl md:text-7xl text-ink uppercase leading-tight">
+            <span class="block gold-foil-text font-medium" data-config="groomFirstName">SHUBHAM</span>
+            <span class="block font-script normal-case text-4xl sm:text-5xl md:text-6xl text-champagne my-1 sm:my-2">&amp;</span>
+            <span class="block gold-foil-text font-medium" data-config="brideFirstName">APURVA</span>
+          </h1>
+        </div>
+
+        <!-- Invitation Line & Romantic Verse -->
+        <div class="relative z-10 mt-6 sm:mt-8 max-w-lg mx-auto hero-reveal delay-300">
+          <p class="text-xs sm:text-sm uppercase tracking-[0.28em] text-ink font-medium">
+            Invite You To Celebrate Their Wedding
+          </p>
+          <p class="mt-3 font-serif italic text-lg sm:text-xl text-inkSoft leading-relaxed">
+            “Two souls, one sacred bond, and a lifetime of love beginning under the blessings of those we hold dear.”
+          </p>
+        </div>
+
+        <!-- Ornamental Wedding Date & Time Crest -->
+        <div class="relative z-10 mt-8 sm:mt-10 hero-reveal delay-400">
+          <div class="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-5 px-7 py-4 sm:px-10 sm:py-4 rounded-2xl sm:rounded-full bg-silk/90 border border-champagne/45 shadow-sm">
+            <span class="font-serif text-xl sm:text-2xl font-semibold tracking-[0.14em] text-ink uppercase" data-config="weddingDateDisplay">
+              14 December 2026
+            </span>
+            <span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-champagne"></span>
+            <span class="text-xs sm:text-sm uppercase tracking-[0.22em] text-champagneDark font-medium" data-config="weddingTimeDisplay">
+              Muhurat at 11:15 AM
+            </span>
+          </div>
+          <p class="mt-3 text-xs tracking-[0.2em] uppercase text-inkSoft" data-config="venueShort">
+            Muktai Place • Amravati
+          </p>
+        </div>
+
+        <!-- Subtle Scroll-Down Indicator -->
+        <div class="relative z-10 mt-10 sm:mt-12 hero-reveal delay-500">
+          <a href="#story" class="inline-flex flex-col items-center gap-1.5 text-champagneDark hover:text-ink transition-colors group" aria-label="Scroll down to Our Story">
+            <span class="text-[10px] uppercase tracking-[0.28em]">Scroll</span>
+            <svg class="w-4 h-4 animate-scroll-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. COUPLE SECTION ("OUR STORY")
+         ====================================================================== -->
+    <section id="story" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 relative">
+      <div class="max-w-5xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto reveal-on-scroll">
+          <span class="text-[11px] uppercase tracking-[0.3em] text-champagneDark font-medium">The Bride &amp; Groom</span>
+          <h2 class="mt-2 font-serif text-3xl sm:text-5xl text-ink font-normal tracking-wide">A Union Written in Grace</h2>
+          <div class="mt-4 flex items-center justify-center gap-3" aria-hidden="true">
+            <span class="h-px w-14 bg-champagne/50"></span>
+            <svg class="w-4 h-4 text-champagne" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+            </svg>
+            <span class="h-px w-14 bg-champagne/50"></span>
+          </div>
+        </div>
+
+        <!-- Couple Editorial Cards Grid -->
+        <div class="mt-14 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+          
+          <!-- GROOM CARD: SHUBHAM -->
+          <div class="reveal-on-scroll bg-white rounded-[28px] border border-champagne/30 p-8 sm:p-10 text-center shadow-luxury relative overflow-hidden group hover:border-champagne/60 transition-all">
+            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-champagne/50 to-transparent"></div>
+            
+            <!-- Ornate Floral Arch Medallion -->
+            <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+              <svg class="absolute inset-0 w-full h-full text-champagne/60 group-hover:scale-105 transition-transform duration-500" viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
+                <circle cx="60" cy="60" r="47" stroke="currentColor" stroke-width="1"/>
+                <!-- Top Botanical Leaves -->
+                <ellipse cx="48" cy="10" rx="8" ry="3.5" transform="rotate(-25 48 10)" fill="#8FA395" fill-opacity="0.45"/>
+                <ellipse cx="72" cy="10" rx="8" ry="3.5" transform="rotate(25 72 10)" fill="#8FA395" fill-opacity="0.45"/>
+                <circle cx="60" cy="9" r="5" fill="#E8C4C4"/>
+              </svg>
+              <div class="w-20 h-20 rounded-full bg-silk border border-champagne/40 flex items-center justify-center">
+                <span class="font-serif text-3xl text-champagneDark font-semibold tracking-wider">SJ</span>
+              </div>
+            </div>
+
+            <span class="text-[11px] uppercase tracking-[0.26em] text-sage font-semibold">The Groom</span>
+            <h3 class="mt-2 font-serif text-3xl sm:text-4xl text-ink tracking-[0.12em] uppercase" data-config="groomFullName">
+              SHUBHAM JANE
+            </h3>
+            <p class="mt-2 text-xs uppercase tracking-[0.2em] text-champagneDark">
+              Son of the Jane Family
+            </p>
+            <p class="mt-5 text-sm sm:text-base text-inkSoft leading-relaxed max-w-sm mx-auto">
+              Grounded in warmth, quiet strength, and timeless values, stepping into a new chapter with gratitude and joy.
+            </p>
+          </div>
+
+          <!-- BRIDE CARD: APURVA -->
+          <div class="reveal-on-scroll bg-white rounded-[28px] border border-champagne/30 p-8 sm:p-10 text-center shadow-luxury relative overflow-hidden group hover:border-champagne/60 transition-all">
+            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-blush to-transparent"></div>
+            
+            <!-- Ornate Floral Arch Medallion -->
+            <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+              <svg class="absolute inset-0 w-full h-full text-champagne/60 group-hover:scale-105 transition-transform duration-500" viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
+                <circle cx="60" cy="60" r="47" stroke="currentColor" stroke-width="1"/>
+                <ellipse cx="48" cy="10" rx="8" ry="3.5" transform="rotate(-25 48 10)" fill="#8FA395" fill-opacity="0.45"/>
+                <ellipse cx="72" cy="10" rx="8" ry="3.5" transform="rotate(25 72 10)" fill="#8FA395" fill-opacity="0.45"/>
+                <circle cx="60" cy="9" r="5" fill="#F2D5C4"/>
+              </svg>
+              <div class="w-20 h-20 rounded-full bg-silk border border-champagne/40 flex items-center justify-center">
+                <span class="font-serif text-3xl text-champagneDark font-semibold tracking-wider">AP</span>
+              </div>
+            </div>
+
+            <span class="text-[11px] uppercase tracking-[0.26em] text-sage font-semibold">The Bride</span>
+            <h3 class="mt-2 font-serif text-3xl sm:text-4xl text-ink tracking-[0.12em] uppercase" data-config="brideFullName">
+              APURVA PACHGADE
+            </h3>
+            <p class="mt-2 text-xs uppercase tracking-[0.2em] text-champagneDark">
+              Daughter of the Pachgade Family
+            </p>
+            <p class="mt-5 text-sm sm:text-base text-inkSoft leading-relaxed max-w-sm mx-auto">
+              Radiant with kindness, grace, and effortless charm, bringing light and serenity to every moment shared together.
+            </p>
+          </div>
+        </div>
+
+        <!-- Romantic Quote Banner -->
+        <div class="mt-12 sm:mt-16 reveal-on-scroll">
+          <div class="bg-silk/90 border border-champagne/30 rounded-[24px] px-6 py-9 sm:px-12 sm:py-11 text-center max-w-3xl mx-auto relative">
+            <span class="font-script text-4xl text-champagne/70 block mb-1" aria-hidden="true">“</span>
+            <blockquote class="font-serif italic text-xl sm:text-2xl md:text-[26px] text-ink leading-relaxed">
+              Two hearts, one beautiful journey, and a lifetime of memories waiting to be made.
+            </blockquote>
+            <div class="mt-4 flex items-center justify-center gap-2 text-xs uppercase tracking-[0.25em] text-champagneDark">
+              <span>Shubham</span>
+              <span>•</span>
+              <span>Apurva</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. LIVE WEDDING COUNTDOWN & WEDDING EVENTS SECTION
+         ====================================================================== -->
+    <section id="events" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-silk/70 border-y border-champagne/20 relative">
+      <div class="max-w-6xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto reveal-on-scroll">
+          <span class="text-[11px] uppercase tracking-[0.3em] text-champagneDark font-medium">Auspicious Moments</span>
+          <h2 class="mt-2 font-serif text-3xl sm:text-5xl text-ink font-normal tracking-wide">Wedding Celebrations</h2>
+          <p class="mt-3 text-sm sm:text-base text-inkSoft">
+            Join us as we gather for sacred rituals, heartfelt blessings, and joyful celebration.
+          </p>
+        </div>
+
+        <!-- LUXURY LIVE COUNTDOWN INSERT -->
+        <div class="mt-12 sm:mt-14 max-w-3xl mx-auto reveal-on-scroll">
+          <div class="bg-white rounded-[28px] border border-champagne/40 p-6 sm:p-10 shadow-card text-center relative overflow-hidden">
+            <p class="text-[11px] uppercase tracking-[0.3em] text-champagneDark font-medium">
+              Counting Down To The Shubh Muhurat
+            </p>
+            <p class="mt-1 font-serif italic text-base sm:text-lg text-inkSoft">
+              Monday, 14 December 2026 • 11:15 AM
+            </p>
+
+            <!-- Countdown Grid -->
+            <div id="countdown-grid" class="mt-7 grid grid-cols-4 gap-2.5 sm:gap-6 max-w-xl mx-auto" role="timer" aria-live="polite">
+              <!-- Days -->
+              <div class="bg-ivory border border-champagne/30 rounded-2xl py-4 px-2 sm:py-5 sm:px-4">
+                <span id="cd-days" class="block font-serif text-3xl sm:text-5xl font-semibold text-ink tabular-nums">--</span>
+                <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagneDark">Days</span>
+              </div>
+              <!-- Hours -->
+              <div class="bg-ivory border border-champagne/30 rounded-2xl py-4 px-2 sm:py-5 sm:px-4">
+                <span id="cd-hours" class="block font-serif text-3xl sm:text-5xl font-semibold text-ink tabular-nums">--</span>
+                <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagneDark">Hours</span>
+              </div>
+              <!-- Minutes -->
+              <div class="bg-ivory border border-champagne/30 rounded-2xl py-4 px-2 sm:py-5 sm:px-4">
+                <span id="cd-minutes" class="block font-serif text-3xl sm:text-5xl font-semibold text-ink tabular-nums">--</span>
+                <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagneDark">Minutes</span>
+              </div>
+              <!-- Seconds -->
+              <div class="bg-ivory border border-champagne/30 rounded-2xl py-4 px-2 sm:py-5 sm:px-4">
+                <span id="cd-seconds" class="block font-serif text-3xl sm:text-5xl font-semibold text-champagneDark tabular-nums">--</span>
+                <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-champagneDark">Seconds</span>
+              </div>
+            </div>
+
+            <p id="countdown-status" class="mt-5 text-xs tracking-[0.18em] uppercase text-sage font-medium">
+              Until the sacred vows begin
+            </p>
+          </div>
+        </div>
+
+        <!-- THREE DEDICATED EVENT CARDS: MUHURAT, SCHEDULE/TIMER, GOOGLE LOCATION -->
+        <div class="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- CARD 1: WEDDING MUHURAT -->
+          <article class="reveal-on-scroll bg-white rounded-[26px] border border-champagne/35 p-7 sm:p-8 shadow-luxury flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-blush/35 border border-blush flex items-center justify-center text-champagneDark mb-6">
+                <!-- Sacred Fire / Lotus Ring Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.5 3.5 5 6.2 5 9.5a5 5 0 01-10 0C7 9.2 9.5 6.5 12 3z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 20h14M7 17h10" />
+                </svg>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.25em] text-champagneDark font-medium">Sacred Ceremony</span>
+              <h3 class="mt-1.5 font-serif text-2xl sm:text-3xl text-ink">Shubh Muhurat</h3>
+              <div class="my-4 h-px w-12 bg-champagne/40"></div>
+              <p class="text-sm text-inkSoft leading-relaxed">
+                Witness the sacred Vedic wedding rituals and Mangalashtak as Shubham &amp; Apurva unite in lifelong companionship.
+              </p>
+            </div>
+
+            <div class="mt-7 pt-5 border-t border-champagne/20 space-y-2 text-sm">
+              <div class="flex items-center justify-between">
+                <span class="text-inkSoft">Date</span>
+                <span class="font-medium text-ink">14 December 2026</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-inkSoft">Auspicious Time</span>
+                <span class="font-semibold text-champagneDark">11:15 AM Onwards</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: RUNNING TIMER & CEREMONY FLOW -->
+          <article class="reveal-on-scroll bg-white rounded-[26px] border border-champagne/35 p-7 sm:p-8 shadow-luxury flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-peach/45 border border-peach flex items-center justify-center text-champagneDark mb-6">
+                <!-- Clock / Hourglass Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] uppercase tracking-[0.25em] text-champagneDark font-medium">Live Schedule</span>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sage/15 text-sage text-[10px] uppercase tracking-wider font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span> Live Timer
+                </span>
+              </div>
+              <h3 class="mt-1.5 font-serif text-2xl sm:text-3xl text-ink">Moments &amp; Timing</h3>
+              <div class="my-4 h-px w-12 bg-champagne/40"></div>
+              
+              <!-- Mini Auspicious Timeline -->
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-center justify-between">
+                  <span class="text-inkSoft">Barat &amp; Guest Welcome</span>
+                  <span class="font-medium text-ink">10:00 AM</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-ink font-medium">Shubh Muhurat</span>
+                  <span class="font-semibold text-champagneDark">11:15 AM</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-inkSoft">Wedding Feast &amp; Blessings</span>
+                  <span class="font-medium text-ink">12:30 PM</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-7 pt-5 border-t border-champagne/20 flex items-center justify-between text-xs uppercase tracking-[0.18em]">
+              <span class="text-inkSoft">Remaining</span>
+              <span id="card-mini-timer" class="font-semibold text-champagneDark tabular-nums">Calculating...</span>
+            </div>
+          </article>
+
+          <!-- CARD 3: GOOGLE LOCATION QUICK CARD -->
+          <article class="reveal-on-scroll bg-white rounded-[26px] border border-champagne/35 p-7 sm:p-8 shadow-luxury flex flex-col justify-between md:col-span-2 lg:col-span-1 hover:-translate-y-1 transition-transform duration-300">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sage/20 border border-sage/40 flex items-center justify-center text-champagneDark mb-6">
+                <!-- Location Pin Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.5-4.8-7-8.3-7-11.5a7 7 0 1114 0c0 3.2-2.5 6.7-7 11.5z" />
+                  <circle cx="12" cy="9.5" r="2.5" />
+                </svg>
+              </div>
+              <span class="text-[11px] uppercase tracking-[0.25em] text-champagneDark font-medium">Ceremony Venue</span>
+              <h3 class="mt-1.5 font-serif text-2xl sm:text-3xl text-ink" data-config="venueName">Muktai Place</h3>
+              <div class="my-4 h-px w-12 bg-champagne/40"></div>
+              <p class="text-sm text-inkSoft leading-relaxed" data-config="venueAddressShort">
+                Muktai Place, Rahatgaon, Ring Road, Amravati, Maharashtra
+              </p>
+            </div>
+
+            <div class="mt-7 pt-5 border-t border-champagne/20 flex flex-wrap items-center gap-3">
+              <a href="https://maps.app.goo.gl/ZLvv9e1yDFRuZVmeA?g_st=ic" target="_blank" rel="noopener noreferrer" data-config-href="googleMapsUrl" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full btn-gold text-xs uppercase tracking-[0.18em] font-medium text-center">
+                <span>Open Google Maps</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              <a href="#venue" class="px-4 py-3 rounded-full border border-champagne/45 text-xs uppercase tracking-[0.16em] text-ink hover:bg-silk transition-colors">
+                Map View
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. VENUE & INTERACTIVE LOCATION SECTION
+         ====================================================================== -->
+    <section id="venue" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 relative">
+      <div class="max-w-5xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto reveal-on-scroll">
+          <span class="text-[11px] uppercase tracking-[0.3em] text-champagneDark font-medium">Where We Gather</span>
+          <h2 class="mt-2 font-serif text-3xl sm:text-5xl text-ink font-normal tracking-wide">The Wedding Venue</h2>
+        </div>
+
+        <!-- Venue Card with Embedded Responsive Map -->
+        <div class="mt-12 sm:mt-14 bg-white rounded-[30px] border border-champagne/35 shadow-luxury overflow-hidden reveal-on-scroll">
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+            
+            <!-- Venue Details Column -->
+            <div class="lg:col-span-5 p-8 sm:p-10 lg:p-12 flex flex-col justify-center bg-gradient-to-b from-white to-silk/60">
+              <div class="inline-flex items-center gap-2 text-champagneDark text-xs uppercase tracking-[0.24em] font-medium">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.5-4.8-7-8.3-7-11.5a7 7 0 1114 0c0 3.2-2.5 6.7-7 11.5z" />
+                  <circle cx="12" cy="9.5" r="2.5" />
+                </svg>
+                <span>Amravati, Maharashtra</span>
+              </div>
+
+              <h3 class="mt-3 font-serif text-3xl sm:text-4xl text-ink" data-config="venueName">
+                Muktai Place
+              </h3>
+
+              <p class="mt-4 text-sm sm:text-base font-medium text-ink" data-config="venueFullAddress">
+                Muktai Place, Rahatgaon, Ring Road, Amravati, Maharashtra
+              </p>
+
+              <p class="mt-4 text-sm text-inkSoft leading-relaxed">
+                Surrounded by serene elegance and warm hospitality, Muktai Place welcomes our cherished family and friends to gather, shower their blessings, and celebrate this auspicious union.
+              </p>
+
+              <div class="mt-8 flex flex-col sm:flex-row lg:flex-col gap-3">
+                <a href="https://maps.app.goo.gl/ZLvv9e1yDFRuZVmeA?g_st=ic" target="_blank" rel="noopener noreferrer" data-config-href="googleMapsUrl" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full btn-gold text-xs uppercase tracking-[0.22em] font-medium">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  <span>Get Directions</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Responsive Google Maps Embed Column -->
+            <div class="lg:col-span-7 min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] relative bg-silk border-t lg:border-t-0 lg:border-l border-champagne/25">
+              <iframe
+                title="Google Map Location for Muktai Place, Rahatgaon, Ring Road, Amravati"
+                src="https://maps.google.com/maps?q=Muktai%20Place%2C%20Rahatgaon%2C%20Ring%20Road%2C%20Amravati&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-full min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. GRATITUDE RSVP SECTION (CLEAN, MINIMAL, TOUCH-FRIENDLY)
+         ====================================================================== -->
+    <section id="rsvp" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-silk/80 border-t border-champagne/25 relative overflow-hidden">
+      
+      <!-- Subtle Corner Botanical Accent -->
+      <div class="absolute -bottom-10 -left-10 w-56 h-56 opacity-40 pointer-events-none" aria-hidden="true">
+        <svg viewBox="0 0 200 200" fill="none">
+          <circle cx="60" cy="140" r="45" fill="#E8C4C4" fill-opacity="0.4"/>
+          <circle cx="110" cy="165" r="30" fill="#F2D5C4" fill-opacity="0.45"/>
+          <ellipse cx="45" cy="95" rx="18" ry="8" transform="rotate(-35 45 95)" fill="#8FA395" fill-opacity="0.35"/>
+        </svg>
+      </div>
+
+      <div class="max-w-2xl mx-auto relative z-10">
+        <div class="bg-white rounded-[32px] invitation-frame px-6 py-12 sm:px-12 sm:py-16 text-center reveal-on-scroll">
+          
+          <span class="text-[11px] uppercase tracking-[0.3em] text-champagneDark font-medium">Kindly Respond</span>
+          <h2 class="mt-2 font-serif text-3xl sm:text-5xl text-ink font-normal">With Gratitude &amp; Love</h2>
+          
+          <!-- Heartfelt Gratitude Message -->
+          <p class="mt-4 font-serif italic text-lg sm:text-xl text-inkSoft leading-relaxed max-w-lg mx-auto">
+            Your presence, warmth, and blessings mean the world to us and our families as we begin this sacred new chapter together. We would be truly honored to celebrate with you.
+          </p>
+
+          <div class="my-7 flex items-center justify-center gap-3" aria-hidden="true">
+            <span class="h-px w-12 bg-champagne/45"></span>
+            <span class="w-1.5 h-1.5 rotate-45 bg-champagne"></span>
+            <span class="h-px w-12 bg-champagne/45"></span>
+          </div>
+
+          <!-- Clean Frictionless RSVP Form (Strictly NO email, phone, food, address, or message fields) -->
+          <form id="rsvp-form" class="text-left max-w-md mx-auto space-y-6" novalidate>
+            
+            <!-- Guest Name Input -->
+            <div>
+              <label for="guest-name" class="block text-xs uppercase tracking-[0.2em] text-ink font-medium mb-2">
+                Your Full Name
+              </label>
+              <input
+                type="text"
+                id="guest-name"
+                name="guestName"
+                required
+                placeholder="Enter your name"
+                autocomplete="name"
+                class="w-full px-5 py-4 rounded-2xl bg-ivory border border-champagne/40 text-ink placeholder-inkSoft/50 text-base focus:outline-none focus:border-champagne focus:ring-2 focus:ring-champagne/20 transition-all"
+              />
+              <p id="name-error" class="hidden mt-2 text-xs text-rose-700 font-medium">
+                Please enter your name so we may welcome you warmly.
+              </p>
+            </div>
+
+            <!-- Attendance Choice Pills -->
+            <div>
+              <span class="block text-xs uppercase tracking-[0.2em] text-ink font-medium mb-2.5">
+                Will You Join Us?
+              </span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" role="radiogroup" aria-label="Attendance Response">
+                <label class="cursor-pointer">
+                  <input type="radio" name="attendance" value="Joyfully Accepts" checked class="peer sr-only" />
+                  <div class="py-3.5 px-4 rounded-2xl border border-champagne/40 bg-ivory text-center text-sm font-medium text-inkSoft peer-checked:bg-champagne peer-checked:text-white peer-checked:border-champagne transition-all select-none">
+                    Joyfully Accepts
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="attendance" value="Sends Warm Blessings" class="peer sr-only" />
+                  <div class="py-3.5 px-4 rounded-2xl border border-champagne/40 bg-ivory text-center text-sm font-medium text-inkSoft peer-checked:bg-sage peer-checked:text-white peer-checked:border-sage transition-all select-none">
+                    Send Blessings Only
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Number of Guests Selector -->
+            <div id="guest-count-wrapper">
+              <span class="block text-xs uppercase tracking-[0.2em] text-ink font-medium mb-2.5">
+                Number of Guests
+              </span>
+              <div class="grid grid-cols-4 gap-2.5" role="radiogroup" aria-label="Number of Guests">
+                <label class="cursor-pointer">
+                  <input type="radio" name="guests" value="1" class="peer sr-only" />
+                  <div class="py-3 rounded-xl border border-champagne/40 bg-ivory text-center text-sm font-medium text-ink peer-checked:bg-silk peer-checked:border-champagne peer-checked:text-champagneDark peer-checked:font-semibold transition-all">1</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="guests" value="2" checked class="peer sr-only" />
+                  <div class="py-3 rounded-xl border border-champagne/40 bg-ivory text-center text-sm font-medium text-ink peer-checked:bg-silk peer-checked:border-champagne peer-checked:text-champagneDark peer-checked:font-semibold transition-all">2</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="guests" value="3" class="peer sr-only" />
+                  <div class="py-3 rounded-xl border border-champagne/40 bg-ivory text-center text-sm font-medium text-ink peer-checked:bg-silk peer-checked:border-champagne peer-checked:text-champagneDark peer-checked:font-semibold transition-all">3</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="guests" value="4+" class="peer sr-only" />
+                  <div class="py-3 rounded-xl border border-champagne/40 bg-ivory text-center text-sm font-medium text-ink peer-checked:bg-silk peer-checked:border-champagne peer-checked:text-champagneDark peer-checked:font-semibold transition-all">4+</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button type="submit" class="w-full py-4 px-8 rounded-full btn-gold text-xs sm:text-sm uppercase tracking-[0.24em] font-semibold">
+                Confirm Attendance
+              </button>
+            </div>
+          </form>
+
+          <!-- Celebratory RSVP Success State (Hidden until submitted) -->
+          <div id="rsvp-success" class="hidden max-w-md mx-auto py-6 px-4 rounded-3xl bg-ivory border border-champagne/40 transition-all">
+            <div class="w-14 h-14 mx-auto rounded-full bg-sage/20 border border-sage/40 flex items-center justify-center text-sage mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl text-ink">
+              Thank you for celebrating this special moment with us!
+            </h3>
+            <p id="rsvp-summary-text" class="mt-3 text-sm text-inkSoft leading-relaxed"></p>
+            
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <button id="download-calendar-btn" type="button" class="w-full sm:w-auto px-5 py-3 rounded-full border border-champagne/60 bg-white text-xs uppercase tracking-[0.18em] text-champagneDark font-medium hover:bg-silk transition-colors">
+                Add to Calendar (.ics)
+              </button>
+              <button id="edit-rsvp-btn" type="button" class="w-full sm:w-auto px-5 py-3 rounded-full text-xs uppercase tracking-[0.18em] text-inkSoft hover:text-ink transition-colors">
+                Update Response
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       7. ELEGANT FOOTER
+       ======================================================================== -->
+  <footer class="bg-ivory border-t border-champagne/25 py-14 sm:py-16 px-4 text-center relative">
+    <div class="max-w-3xl mx-auto">
+      
+      <!-- Small Floral Decorative Element -->
+      <div class="flex justify-center mb-5" aria-hidden="true">
+        <svg class="w-28 h-10 text-champagne" viewBox="0 0 140 44" fill="none">
+          <path d="M10 22H52" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55"/>
+          <path d="M88 22H130" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55"/>
+          <ellipse cx="56" cy="18" rx="6" ry="2.8" transform="rotate(-25 56 18)" fill="#8FA395" fill-opacity="0.55"/>
+          <ellipse cx="84" cy="18" rx="6" ry="2.8" transform="rotate(25 84 18)" fill="#8FA395" fill-opacity="0.55"/>
+          <circle cx="70" cy="22" r="8" fill="#E8C4C4" fill-opacity="0.65"/>
+          <circle cx="70" cy="22" r="3" fill="#C59B5F"/>
+        </svg>
+      </div>
+
+      <p class="font-script text-3xl sm:text-4xl text-champagneDark">
+        With love, Apurva &amp; Shubham
+      </p>
+      <p class="mt-2 font-serif text-base sm:text-lg tracking-[0.2em] uppercase text-ink">
+        14 December 2026 • Amravati
+      </p>
+      <p class="mt-3 text-[11px] uppercase tracking-[0.24em] text-inkSoft">
+        Jane &amp; Pachgade Families
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       INTERACTIVE JAVASCRIPT (CONFIG, COUNTDOWN, NAVIGATION, RSVP, REVEAL)
+       ======================================================================== -->
+  <script>
+    /**
+     * EASY-TO-EDIT WEDDING CONFIGURATION
+     * Update names, date, time, venue, or map link here to customize effortlessly.
+     */
+    const INVITATION_CONFIG = {
+      groomFirstName: 'SHUBHAM',
+      groomFullName: 'SHUBHAM JANE',
+      brideFirstName: 'APURVA',
+      brideFullName: 'APURVA PACHGADE',
+      weddingDateISO: '2026-12-14T11:15:00+05:30', // 14 Dec 2026 at 11:15 AM IST
+      weddingDateDisplay: '14 December 2026',
+      weddingTimeDisplay: 'Muhurat at 11:15 AM',
+      venueName: 'Muktai Place',
+      venueShort: 'Muktai Place • Amravati',
+      venueAddressShort: 'Muktai Place, Rahatgaon, Ring Road, Amravati, Maharashtra',
+      venueFullAddress: 'Muktai Place, Rahatgaon, Ring Road, Amravati, Maharashtra',
+      googleMapsUrl: 'https://maps.app.goo.gl/ZLvv9e1yDFRuZVmeA?g_st=ic'
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Hydrate configurable text & links if customized
+      document.querySelectorAll('[data-config]').forEach(el => {
+        const key = el.getAttribute('data-config');
+        if (INVITATION_CONFIG[key]) {
+          el.textContent = INVITATION_CONFIG[key];
+        }
+      });
+      document.querySelectorAll('[data-config-href]').forEach(el => {
+        const key = el.getAttribute('data-config-href');
+        if (INVITATION_CONFIG[key]) {
+          el.setAttribute('href', INVITATION_CONFIG[key]);
+        }
+      });
+
+      // 2. Mobile Navigation Drawer Toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMobileMenu(forceClose = false) {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        if (forceClose || isOpen) {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.classList.remove('hidden');
+          hamburgerIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+          menuBtn.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      menuBtn.addEventListener('click', () => toggleMobileMenu());
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => toggleMobileMenu(true));
+      });
+
+      // 3. Real-Time Wedding Countdown Timer
+      const targetDate = new Date(INVITATION_CONFIG.weddingDateISO).getTime();
+      const daysEl = document.getElementById('cd-days');
+      const hoursEl = document.getElementById('cd-hours');
+      const minutesEl = document.getElementById('cd-minutes');
+      const secondsEl = document.getElementById('cd-seconds');
+      const statusEl = document.getElementById('countdown-status');
+      const cardMiniTimer = document.getElementById('card-mini-timer');
+
+      function padZero(num) {
+        return String(num).padStart(2, '0');
+      }
+
+      function updateCountdown() {
+        const now = Date.now();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+          daysEl.textContent = '00';
+          hoursEl.textContent = '00';
+          minutesEl.textContent = '00';
+          secondsEl.textContent = '00';
+          statusEl.textContent = 'Today We Celebrate Shubham & Apurva!';
+          if (cardMiniTimer) cardMiniTimer.textContent = 'Happening Today';
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        daysEl.textContent = padZero(days);
+        hoursEl.textContent = padZero(hours);
+        minutesEl.textContent = padZero(minutes);
+        secondsEl.textContent = padZero(seconds);
+
+        if (cardMiniTimer) {
+          cardMiniTimer.textContent = `${days}d ${padZero(hours)}h ${padZero(minutes)}m`;
+        }
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // 4. IntersectionObserver Scroll Reveal Animations
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        revealElements.forEach(el => observer.observe(el));
+      } else {
+        revealElements.forEach(el => el.classList.add('is-visible'));
+      }
+
+      // 5. Minimalist RSVP Form Handling
+      const rsvpForm = document.getElementById('rsvp-form');
+      const guestNameInput = document.getElementById('guest-name');
+      const nameError = document.getElementById('name-error');
+      const rsvpSuccess = document.getElementById('rsvp-success');
+      const rsvpSummaryText = document.getElementById('rsvp-summary-text');
+      const editRsvpBtn = document.getElementById('edit-rsvp-btn');
+      const downloadCalBtn = document.getElementById('download-calendar-btn');
+      const guestCountWrapper = document.getElementById('guest-count-wrapper');
+
+      // Toggle guest count visibility if declining
+      rsvpForm.querySelectorAll('input[name="attendance"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          if (e.target.value === 'Sends Warm Blessings') {
+            guestCountWrapper.classList.add('opacity-40', 'pointer-events-none');
+          } else {
+            guestCountWrapper.classList.remove('opacity-40', 'pointer-events-none');
+          }
+        });
+      });
+
+      rsvpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = guestNameInput.value.trim();
+
+        if (!name) {
+          nameError.classList.remove('hidden');
+          guestNameInput.focus();
+          return;
+        }
+        nameError.classList.add('hidden');
+
+        const attendance = rsvpForm.querySelector('input[name="attendance"]:checked').value;
+        const guests = rsvpForm.querySelector('input[name="guests"]:checked').value;
+
+        if (attendance === 'Joyfully Accepts') {
+          rsvpSummaryText.textContent = `Dear ${name}, we have joyfully noted your presence (${guests} ${guests === '1' ? 'guest' : 'guests'}) for Shubham & Apurva's wedding on 14 December 2026 at Muktai Place, Amravati.`;
+        } else {
+          rsvpSummaryText.textContent = `Dear ${name}, your warm wishes and blessings have been received with heartfelt gratitude by the Jane & Pachgade families.`;
+        }
+
+        rsvpForm.classList.add('hidden');
+        rsvpSuccess.classList.remove('hidden');
+      });
+
+      editRsvpBtn.addEventListener('click', () => {
+        rsvpSuccess.classList.add('hidden');
+        rsvpForm.classList.remove('hidden');
+      });
+
+      // Generate downloadable .ics calendar invite
+      downloadCalBtn.addEventListener('click', () => {
+        const icsContent = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'PRODID:-//Shubham & Apurva Wedding//EN',
+          'BEGIN:VEVENT',
+          'DTSTART:20261214T054500Z',
+          'DTEND:20261214T103000Z',
+          'SUMMARY:Wedding of Shubham Jane & Apurva Pachgade',
+          'DESCRIPTION:Shubh Muhurat at 11:15 AM. Together with the Jane & Pachgade families, we joyfully invite you to celebrate our wedding.',
+          'LOCATION:Muktai Place, Rahatgaon, Ring Road, Amravati, Maharashtra',
+          'END:VEVENT',
+          'END:VCALENDAR'
+        ].join('\r\n');
+
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Shubham-Apurva-Wedding-14Dec2026.ics';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+    });
+  </script>
+</body>
+</html>
