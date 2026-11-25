@@ -434,7 +434,6 @@
         
         <!-- Section Header -->
         <div class="text-center max-w-2xl mx-auto reveal-on-scroll">
-          <span class="text-[11px] uppercase tracking-[0.3em] text-champagneDark font-medium">The Bride &amp; Groom</span>
           <h2 class="mt-2 font-serif text-3xl sm:text-5xl text-ink font-normal tracking-wide">A Union Written in Grace</h2>
           <div class="mt-4 flex items-center justify-center gap-3" aria-hidden="true">
             <span class="h-px w-14 bg-champagne/50"></span>
@@ -466,8 +465,6 @@
                 <span class="font-serif text-3xl text-champagneDark font-semibold tracking-wider">SJ</span>
               </div>
             </div>
-
-            <span class="text-[11px] uppercase tracking-[0.26em] text-sage font-semibold">The Groom</span>
             <h3 class="mt-2 font-serif text-3xl sm:text-4xl text-ink tracking-[0.12em] uppercase" data-config="groomFullName">
               SHUBHAM JANE
             </h3>
@@ -496,8 +493,6 @@
                 <span class="font-serif text-3xl text-champagneDark font-semibold tracking-wider">AP</span>
               </div>
             </div>
-
-            <span class="text-[11px] uppercase tracking-[0.26em] text-sage font-semibold">The Bride</span>
             <h3 class="mt-2 font-serif text-3xl sm:text-4xl text-ink tracking-[0.12em] uppercase" data-config="brideFullName">
               APURVA PACHGADE
             </h3>
@@ -1049,56 +1044,7 @@
         revealElements.forEach(el => el.classList.add('is-visible'));
       }
 
-      // 5. Minimalist RSVP Form Handling
-      const rsvpForm = document.getElementById('rsvp-form');
-      const guestNameInput = document.getElementById('guest-name');
-      const nameError = document.getElementById('name-error');
-      const rsvpSuccess = document.getElementById('rsvp-success');
-      const rsvpSummaryText = document.getElementById('rsvp-summary-text');
-      const editRsvpBtn = document.getElementById('edit-rsvp-btn');
-      const downloadCalBtn = document.getElementById('download-calendar-btn');
-      const guestCountWrapper = document.getElementById('guest-count-wrapper');
-
-      // Toggle guest count visibility if declining
-      rsvpForm.querySelectorAll('input[name="attendance"]').forEach(radio => {
-        radio.addEventListener('change', (e) => {
-          if (e.target.value === 'Sends Warm Blessings') {
-            guestCountWrapper.classList.add('opacity-40', 'pointer-events-none');
-          } else {
-            guestCountWrapper.classList.remove('opacity-40', 'pointer-events-none');
-          }
-        });
-      });
-
-      rsvpForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = guestNameInput.value.trim();
-
-        if (!name) {
-          nameError.classList.remove('hidden');
-          guestNameInput.focus();
-          return;
-        }
-        nameError.classList.add('hidden');
-
-        const attendance = rsvpForm.querySelector('input[name="attendance"]:checked').value;
-        const guests = rsvpForm.querySelector('input[name="guests"]:checked').value;
-
-        if (attendance === 'Joyfully Accepts') {
-          rsvpSummaryText.textContent = `Dear ${name}, we have joyfully noted your presence (${guests} ${guests === '1' ? 'guest' : 'guests'}) for Shubham & Apurva's wedding on 14 December 2026 at Muktai Place, Amravati.`;
-        } else {
-          rsvpSummaryText.textContent = `Dear ${name}, your warm wishes and blessings have been received with heartfelt gratitude by the Jane & Pachgade families.`;
-        }
-
-        rsvpForm.classList.add('hidden');
-        rsvpSuccess.classList.remove('hidden');
-      });
-
-      editRsvpBtn.addEventListener('click', () => {
-        rsvpSuccess.classList.add('hidden');
-        rsvpForm.classList.remove('hidden');
-      });
-
+     
       // Generate downloadable .ics calendar invite
       downloadCalBtn.addEventListener('click', () => {
         const icsContent = [
